@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&family=Dancing+Script&family=Festive&family=Moo+Lah+Lah&family=PT+Sans+Narrow&family=Poppins:wght@300&family=Roboto:wght@300&family=Rock+Salt&family=VT323&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Sidebar */
+
+aside {
+  background-color: #2563eb;
+  color: white;
+  padding-left: 20px;
+  /* height: 100vh; */
+}
+
+aside div.logo {
+  padding: 20px 20px 20px 0px;
+}
+
+aside div.logo img {
+  vertical-align: middle;
+}
+
+aside div.logo h2 {
+  display: inline-block;
+  vertical-align: middle;
+  /* position: relative; */
+  /* bottom: 14px; */
+}
+
+aside div.sidebar-basic ul,
+aside div.sidebar-settings ul {
+  list-style: none;
+}
+
+aside div.sidebar-basic ul > li,
+aside div.sidebar-settings ul > li {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+aside div.sidebar-basic ul > li img,
+aside div.sidebar-settings ul > li img {
+  vertical-align: middle;
+  padding-right: 12px;
+}
+
+aside div.sidebar-basic ul > li p,
+aside div.sidebar-settings ul > li p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+aside div.sidebar-basic {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
