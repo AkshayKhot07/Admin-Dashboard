@@ -6,13 +6,18 @@
   font-family: "Roboto", sans-serif;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: [start]1fr [middle]4fr [end];
+}
+
 /* Sidebar */
 
 aside {
   background-color: #2563eb;
   color: white;
   padding-left: 20px;
-  /* height: 100vh; */
+  height: 100vh;
 }
 
 aside div.logo {
@@ -26,8 +31,6 @@ aside div.logo img {
 aside div.logo h2 {
   display: inline-block;
   vertical-align: middle;
-  /* position: relative; */
-  /* bottom: 14px; */
 }
 
 aside div.sidebar-basic ul,
@@ -40,7 +43,6 @@ aside div.sidebar-settings ul > li {
   margin-bottom: 20px;
   font-size: 20px;
   font-weight: bold;
-  cursor: pointer;
 }
 
 aside div.sidebar-basic ul > li img,
@@ -53,9 +55,107 @@ aside div.sidebar-basic ul > li p,
 aside div.sidebar-settings ul > li p {
   display: inline-block;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 aside div.sidebar-basic {
   margin-top: 10px;
   margin-bottom: 50px;
+}
+
+#privacy {
+  margin-bottom: 0px;
+}
+
+/* Header */
+
+header {
+  background-color: pink;
+  padding: 15px;
+}
+
+.cat-logo {
+  background-color: yellow;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.search-section {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.search-section .search-bar label i {
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.search-section .search-bar input[type="search"] {
+  width: 900px;
+  height: 30px;
+  border: none;
+  border-radius: 50px;
+  background-color: #dcdcdc;
+  margin-left: 20px;
+}
+
+.search-section .notify-bar i {
+  font-size: 40px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.search-section .notify-bar span {
+  font-size: 22px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.search-section .notify-bar img {
+  vertical-align: middle;
+  margin: 0px 20px;
+}
+
+.handler-section {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.handler-section .user-info img {
+  float: left;
+  margin-right: 20px;
+  background-color: yellow;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.handler-section .user-info p,
+small {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.handler-section .user-info p {
+  padding-top: 10px;
+}
+
+.user-operations-btn {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: 30px;
+}
+
+.user-operations-btn > button {
+  font-size: 20px;
+  font-weight: bold;
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 50px;
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  margin: 0 20px;
 }

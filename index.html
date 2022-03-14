@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Admin Dashboard</title>
   </head>
   <body>
@@ -52,13 +59,43 @@
               <img src="./sidebar/support.png" alt="support" />
               <p>Support</p>
             </li>
-            <li>
+            <li id="privacy">
               <img src="./sidebar/privacy.png" alt="privacy" />
               <p>Privacy</p>
             </li>
           </ul>
         </div>
       </aside>
+      <div class="middle">
+        <header class="header">
+          <div class="search-section">
+            <div class="search-bar">
+              <label for="search-bar"
+                ><i class="fa fa-search" aria-hidden="true"></i
+              ></label>
+              <input type="search" id="search-bar" name="search-bar" />
+            </div>
+            <div class="notify-bar">
+              <i class="fa-regular fa-bell"></i>
+              <img src="./catlogo.png" alt="cat logo" class="cat-logo" />
+              <span>Meowth Shin</span>
+            </div>
+          </div>
+          <div class="handler-section">
+            <div class="user-info">
+              <img src="./catlogo.png" alt="cat logo" class="cat-logo" />
+              <small>Hi there,</small>
+              <p>Meowth Shin (@meowth)</p>
+            </div>
+            <div class="user-operations-btn">
+              <button class="new">New</button>
+              <button class="upload">Upload</button>
+              <button class="share">Share</button>
+            </div>
+          </div>
+        </header>
+        <main></main>
+      </div>
     </div>
   </body>
 </html>
