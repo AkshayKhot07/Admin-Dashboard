@@ -17,7 +17,7 @@ aside {
   background-color: #2563eb;
   color: white;
   padding-left: 20px;
-  height: 100vh;
+  /* height: auto; */
 }
 
 aside div.logo {
@@ -158,4 +158,108 @@ small {
   color: white;
   cursor: pointer;
   margin: 0 20px;
+}
+
+/* Main */
+
+main {
+  background-color: lightcyan;
+  padding: 10px 0px 5px 30px;
+}
+
+main span {
+  display: flex;
+  justify-content: space-between;
+}
+
+main span h2.announcements {
+  padding-right: 180px;
+}
+
+.trending {
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+div.main-container {
+  padding: 10px;
+  background-color: lightcyan;
+
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+
+main div.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+main div.card {
+  height: 300px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px black;
+  padding: 10px;
+  font-weight: bold;
+  border-left: orange solid 10px;
+
+  display: grid;
+}
+
+main div.card span {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+main div.card span i {
+  margin: 0 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Side Cards */
+
+.side-card {
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  height: 400px;
+}
+
+.side-card p {
+  font-size: 18px;
+  text-align: start;
+}
+
+.side-card p.header {
+  font-weight: bold;
+}
+
+.side-card > div {
+  padding: 10px 0px;
+  padding-left: 20px;
+}
+
+.side-card > div.first-div {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.side-card > div.second-div {
+  border-top: solid rgb(202, 202, 202) 0.5px;
+  border-bottom: solid rgb(202, 202, 202) 0.5px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.side-card > div.third-div {
+  margin-top: 20px;
+}
+
+.side-card.side-card1 {
+  margin-bottom: 30px;
 }
